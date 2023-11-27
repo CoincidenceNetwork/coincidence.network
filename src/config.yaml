@@ -1,30 +1,30 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Coincidence
+  site: 'https://coincidence.network'
   base: '/'
   trailingSlash: false
 
-  googleSiteVerificationId: orcPxI47GSa-cRvY11tUe6iGg2IO_RPvnA1q95iEM3M
+  googleSiteVerificationId: null
 
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Coincidence
+    template: '%s — Coincidence'
+  description: 'Connecting the world and advancing matchmaking technologies for the flourishing of social relationships.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Coincidence
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/logo.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@TeamCoincidence'
+    site: '@TeamCoincidence'
     cardType: summary_large_image
 
 i18n:
@@ -78,7 +78,7 @@ ui:
         default: rgb(16 16 16)
         heading: rgb(0 0 0)
         muted: rgb(40 40 40)
-        bgPage: rgb(255 255 255)
+        bgPage: rgb(18 18 18)
         primary: rgb(0 124 220)
         secondary: rgb(30 58 138)
         accent: rgb(109 40 217)
@@ -88,19 +88,19 @@ ui:
         error: rgb(248 114 114)
         link: var(--ph-color-primary)
         linkActive: var(--ph-color-link)
-    dark:
-      fonts: {}
-      colors:
-        default: rgb(247, 248, 248)
-        heading: rgb(247, 248, 248)
-        muted: rgb(200, 188, 208)
-        bgPage: rgb(3 6 32)
-        primary: rgb(29 78 216)
-        secondary: rgb(30 58 138)
-        accent: rgb(135 77 2267)
-        info: rgb(58 191 248)
-        success: rgb(54 211 153)
-        warning: rgb(251 189 35)
-        error: rgb(248 114 114)
-        link: var(--ph-color-primary)
-        linkActive: var(--ph-color-link)
+    # dark:
+    #   fonts: {}
+    #   colors:
+    #     default: rgb(247, 248, 248)
+    #     heading: rgb(247, 248, 248)
+    #     muted: rgb(200, 188, 208)
+    #     bgPage: rgb(3 6 32)
+    #     primary: rgb(29 78 216)
+    #     secondary: rgb(30 58 138)
+    #     accent: rgb(135 77 2267)
+    #     info: rgb(58 191 248)
+    #     success: rgb(54 211 153)
+    #     warning: rgb(251 189 35)
+    #     error: rgb(248 114 114)
+    #     link: var(--ph-color-primary)
+    #     linkActive: var(--ph-color-link)

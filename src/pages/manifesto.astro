@@ -1,0 +1,47 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import TextBlock from '~/components/widgets/TextBlock.astro';
+
+const metadata = {
+  title: 'Coincidence Home Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <Hero
+    title="Coincidence Manifesto"
+    subtitle="Connecting the world and advancing matchmaking technologies for the flourishing of social relationships."
+    image={{ src: '~/assets/images/logo.png', alt: 'Coincidence logo' }}
+  >
+    <TextBlock title="Vision">
+      A world of meaningful relationships, where happiness and cooperation prevail. A matchmaking experience that is
+      pleasant and safe, transforming the way we connect and relate.
+    </TextBlock>
+    <TextBlock title="The Problem">
+      We are social beings, choosing who we are connected with has a great influence on our lives. In one human life, we
+      relate deeply with tens of people, and lightly with hundreds to tens of thousands. There are 8.1 billion humans
+      (circa 2023) that we can connect with, far beyond what is intuitively understandable. To navigate these countless
+      potential connections, we usually rely on local circumstances, events, workplace, friend-of-friend connections.
+      <br /><br />
+       These are powerful, but now the world is global, industrialized, and enabled with the Internet. To find each
+      other, we use matchmaking, networking, dating, and even event apps — Tinder, Meetup, Swapcard, Peanut, etc. These
+      efforts are limited by their design, technology, culture, and purpose. They do not empower us with the most
+      meaningful connections across varied contexts. They are the beginning of matchmaking technology, not the end. It
+      can be much better.
+    </TextBlock>
+    <TextBlock title="The Solution">
+      Coincidence is the solution is to advance the technology and culture of matchmaking, for the empowering of
+      meaningful relations. It will bring us beyond serendipity, status quo matchmaking apps, and traditional ways of
+      social connection.
+      <br /><br />Coincidence is a matchmaking app of multiple aspects. In general, it allows for connection
+      recommendations from various methodologies: shared interests, verifiable commonalities, deep learning, etc. The
+      Coincidence Events aspect specializes matchmaking to the contexts of conferences, hackathons, workshops, etc. The
+      Coincidence Scholar aspect allows researchers and students to meet from specific publications or interests. These
+      are the initial aspects. Notably, Coincidence is also an open protocol, thereby enabling the community to augment
+      their special context with a matchmaking substrate.
+    </TextBlock>
+  </Hero>
+</Layout>

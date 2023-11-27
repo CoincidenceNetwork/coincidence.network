@@ -1,0 +1,28 @@
+---
+export interface Props {
+  id?: string;
+  title?: string;
+}
+
+const { id, title = await Astro.slots.render('title') } = Astro.props;
+---
+
+<section class="not-prose" {...id ? { id } : {}}>
+  <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
+  <div class="relative max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="pt-0 md:pt-6 pointer-events-none"></div>
+    <div class="text-center pt-2 pb-4 md:pb-8 max-w-xl mx-auto">
+      {
+        title && (
+          <h1
+            class="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-5 font-heading text-gray-800"
+            set:html={title}
+          />
+        )
+      }
+      <div class="text-md mb-6 text-slate-700 text-left">
+        <slot />
+      </div>
+    </div>
+  </div>
+</section>
